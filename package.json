@@ -1,7 +1,6 @@
 {
   "name": "swap-explorer",
   "private": true,
-  "homepage": ".",
   "proxy": "https://unpkg.com",
   "devDependencies": {
     "@popperjs/core": "^2.4.2",
