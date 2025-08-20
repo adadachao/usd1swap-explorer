@@ -65,7 +65,7 @@ function GlobalPage() {
   }, [])
 
   // for tracked data on pairs
-  const [useTracked, setUseTracked] = useState(true)
+  const [useTracked, setUseTracked] = useState(false)
 
   return (
     <PageWrapper>

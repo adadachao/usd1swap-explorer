@@ -169,7 +169,7 @@ function TokenPage({ address, history }) {
     })
   }, [])
 
-  const [useTracked, setUseTracked] = useState(true)
+  const [useTracked, setUseTracked] = useState(false)
 
   if (TOKEN_BLACKLIST.includes(address)) {
     return (
