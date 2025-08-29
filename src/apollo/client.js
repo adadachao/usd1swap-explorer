@@ -4,7 +4,8 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usd1swap2',
+    // uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usd1swap2',
+    uri: '/subgraphs/name/movabeta/usd1swap2',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -20,7 +21,8 @@ export const client = new ApolloClient({
 
 export const stakingClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usdswap',
+    // uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usdswap',
+    uri: '/subgraphs/name/movabeta/usdswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -28,7 +30,8 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usdswap-blocks',
+    // uri: 'https://subgraph.bitheart.org/subgraphs/name/movabeta/usdswap-blocks',
+    uri: '/subgraphs/name/movabeta/usdswap-blocks',
   }),
   cache: new InMemoryCache(),
 })
